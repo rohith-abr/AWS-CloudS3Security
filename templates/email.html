@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CloudS3Security - Start</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #161b22;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+            width: 350px;
+            text-align: center;
+            border: 1px solid #30363d;
+        }
+
+        .login-container img {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+            color: #58a6ff;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 0.6rem 0;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        input::placeholder {
+            color: #8b949e;
+        }
+
+        small {
+            display: block;
+            text-align: left;
+            font-size: 0.75rem;
+            color: #8b949e;
+            margin-top: -6px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #238636;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2ea043;
+        }
+
+        .footer {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="/static/logo.png" alt="CloudS3Security Logo" onerror="this.style.display='none'">
+        <h2>🔐 Welcome to CloudS3Security</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Continue</button>
+        </form>
+        <div class="footer">These details will appear on your dashboard</div>
+    </div>
+</body>
+</html>

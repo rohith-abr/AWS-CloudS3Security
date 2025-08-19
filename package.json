@@ -1,0 +1,38 @@
+{
+  "name": "clouds3security",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.clouds3security.app",
+    "productName": "CloudS3Security",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!venv",
+      "!node_modules/*/.bin"
+    ],
+    "extraResources": [
+      {
+        "from": "venv",
+        "to": "venv"
+      }
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.6.0"
+  }
+}

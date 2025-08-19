@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - CloudS3Security</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .intro-container {
+            background-color: #161b22;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+            width: 400px;
+            text-align: center;
+            border: 1px solid #30363d;
+        }
+
+        .intro-container img {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #58a6ff;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #238636;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2ea043;
+        }
+
+        .footer {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <img src="/static/logo.png" alt="CloudS3Security Logo" onerror="this.style.display='none'">
+        <h2>🚀 Start Monitoring and Analysis</h2>
+        <p>
+            CloudS3Security detects risks in real-time from your AWS S3 buckets.
+        </p>
+        <div class="button-group">
+            <form method="POST" action="/login">
+                <button type="submit">🔐 Connect to AWS S3 (Live Scan)</button>
+            </form>
+        </div>
+        <div class="footer">Your cloud, your control — made safer.</div>
+    </div>
+</body>
+</html>
