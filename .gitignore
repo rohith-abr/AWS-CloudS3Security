@@ -1,4 +1,13 @@
+# Ignore Python environment and cache
 venv/
+__pycache__/
+*.pyc
+
+# Ignore Node.js dependencies
+node_modules/
+
+# macOS files
+.DS_Storevenv/
 __pycache__/
 *.log
 node_modules
